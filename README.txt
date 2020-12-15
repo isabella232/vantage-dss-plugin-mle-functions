@@ -1,7 +1,5 @@
 -------------------------------------------------------------------------
-- README file: The Teradata Vantage Analytic Functions Plugin & 
--              The Teradata Vantage SCRIPT Table Operator Plugin for R
--              and Python
+- README file: The Teradata Vantage ML Engine Functions Plugin
 -              
 - Version: 1.1-1
 -
@@ -10,16 +8,11 @@
 - Copyright (c) 2020 Teradata
 -------------------------------------------------------------------------
 
-The Teradata Vantage Plugins for Dataiku Data Science Studio (DSS) allows 
+The Teradata Vantage ML Engine Functions Plugins for Dataiku Data Science Studio (DSS) allows 
 end users to leverage Vantage analytics within their DSS data science workflows.
 The first, the Teradata Vantage Analytic Functions Plugin for Dataiku DSS, 
 supports all 180+ Vantage Machine Learning and Graph Engine functions as well 
 as the new analytic functions built into the Advanced SQL engine in 16.20.  
-
-The second, the Teradata Vantage SCRIPT Table Operator Plugin for R and Python, 
-allows the end user to include custom built R or Python code from notebooks built
-in Dataiku DSS that will push down and execute directly in the Advanced SQL engine of 
-the Teradata Vantage platform through the built-in table operator, SCRIPT.
 
 Note that Dataiku DSS itself also supports ANSI SQL push-down for most of their 
 data preprocessing Visual recipes.  
@@ -72,7 +65,7 @@ III. Limitations
    table prior to executing an algorithm, but others do not. In the former case, 
    the Advanced SQL Engine throws an "Already exists" exception.
 
-2. The appended version of the Dataiku DSS Teradata Vantage Analytic Functions 
+2. The appended version of the Dataiku DSS Teradata Vantage MLE Functions 
    plugin has been tested to work with the MLE analytic functions on Vantage 1.1 
    systems. Earlier or later analytic function versions may require a different 
    set of function metadata.
