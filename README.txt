@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------
 - README file: The Teradata Vantage ML Engine Functions Plugin
 -              
-- Version: 1.1-1
+- Version: 1.1-2
 -
 - March 2020                                                                   
 -
