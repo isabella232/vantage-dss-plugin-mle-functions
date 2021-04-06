@@ -16,7 +16,7 @@ plugin supports all 180+ Vantage Machine Learning and Graph Engine functions in
 Note that Dataiku DSS itself also supports ANSI SQL push-down for most of their
 data preprocessing Visual recipes.
 
-The Plugins were tested with Vantage 1.1 Release Candidate 9.
+The present plugin has been tested with Vantage 1.1 Release Candidate 9.
 
 I. System Requirements
 ----------------------
