@@ -3,7 +3,7 @@
 -
 - Version: 1.1-2
 -
-- March 2021
+- April 2021
 -
 - Copyright (c) 2021 Teradata
 -------------------------------------------------------------------------
@@ -35,10 +35,12 @@ To install the Teradata Vantage ML Engine Functions plugin for Dataiku DSS,
 perform the following:
 
 1. In DSS Settings page (accessible through the Admin Tools button),
-   select the [Plugins] tab, then select the [ADVANCED] option.
-2. Click on [Choose File] and browse to the location of the present plugin
+   select the [Plugins] link, then click on the [Installed] tab.
+2. Click on [ADD PLUGIN] button and select the "Upload" link".
+3. In the pop-up window, browse to the location of the present plugin
    zip file in your local filesystem.
-3. If a previous installation of the plugin exists, check "Is update".
+3. If a previous installation of the plugin exists, check the button next to
+   "This is an update for an installed plugin".
 4. Click on [UPLOAD] button.
 5. When the upload succeeds, click on [Reload] button, or do a hard refresh
    (Ctrl + F5) on all open Dataiku browsers for the change to take effect.
@@ -67,13 +69,18 @@ III. Limitations
 3. The plugin only supports Vantage Advanced SQL Engine Database datasets as
    input and output.
 
-4. Functions with any OUTPUT TABLE type arguments will require the user to add
+4. Due to the mode the plugin creates output tables, the function output is
+   checked for duplicate rows. If any duplicate rows are found, then they are
+   removed from the output table. This behavior is not adjustable in the
+   present version of the plugin.
+
+5. Functions with any OUTPUT TABLE type arguments will require the user to add
    an output dataset for the SELECT statement results of the query and any
    additional output tables. Please refer to the Vantage ML Engine Analytic
    Functions documentation page at docs.teradata.com to learn about the output
    tables of each function.
 
-5. MapReduce Function pairs are currently limited to the following select few:
+6. MapReduce Function pairs are currently limited to the following select few:
    - ApproxDCount,
    - ApproxPercentile,
    - Correlation,
@@ -82,7 +89,7 @@ III. Limitations
    In order to use these functions, please call their corresponding Map Functions
    on the function selection box and it will display the arguments for both functions.
 
-6. The following issues are still open at the time of the release of the plugin:
+7. The following issues are still open at the time of the release of the plugin:
 
 |-------------------------------------|---------------------------------------|------|
 | Functional Category - Function Name |             Issue                     | JIRA |
@@ -179,8 +186,8 @@ IV. References
 For additional information on the Teradata Vantage ML Engine analytic functions,
 search for the following on docs.teradata.com:
 
-1. "Teradata Vantage Machine Learning Engine Analytic Function Reference"
-2. "Teradata Vantage User Guide"
+1. "Teradata Vantage Machine Learning Engine Analytic Function Reference".
+2. "Teradata Vantage User Guide".
 
 
 V. Changelog
