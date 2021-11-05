@@ -8,6 +8,9 @@
 - Copyright (c) 2021 Teradata
 -------------------------------------------------------------------------
 
+NOTE: This is the last planned release of the plugin. As of November 2021
+      the present plugin is not maintained any longer.
+
 The Teradata Vantage Machine Learning Engine Functions Plugin allows end users
 to leverage Vantage analytics within their DSS data science workflows. This
 plugin supports all 180+ Vantage Machine Learning and Graph Engine functions in
